@@ -6,18 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Psychic Game</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Aguafina+Script&display=swap" rel="stylesheet">
     
 </head>
 <body>
     <!--Space monster themed pyshic game (maybe lovecraftian cosmic horror?)-->
     <h1>Psychic Game</h1>
     <!--The rules "guess what letter i'm thinking of"-->
-    <h2>Guess what letter I'm thinking of . . .</h2>
-    <!--Make wins, losses, guesses, and letters guessed with spans with id's for js-->
-    <h3>Wins: <span id="wins"></span></h3>
-    <h3>Losses: <span id="losses"></span></h3>
-    <h3>Guesses Left: <span id="guesses"></span></h3>
-    <h3>Your guesses so far: <span id="yourGuesses"></span></h3>
+    <div class="game">
+        <img src="https://vignette.wikia.nocookie.net/vsbattles/images/9/94/Cthulhu_by_disse86-d9tq84i.jpg/revision/latest?cb=20161030021815">
+        
+        <div class="gameStats">
+            <h2>Guess what letter I'm thinking of . . .</h2>
+            <!--Make wins, losses, guesses, and letters guessed with spans with id's for js-->
+            <h3>Wins: <span id="wins">0</span></h3>
+            <h3>Losses: <span id="losses">0</span></h3>
+            <h3>Guesses Left: <span id="guesses">10</span></h3>
+            <h3>Your guesses so far: <span id="yourGuesses"></span></h3>
+        </div>
+    </div>
 </body>
 
 <script type="text/javascript" src="assets/javascript/game.js"></script>
